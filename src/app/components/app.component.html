@@ -1,0 +1,25 @@
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+
+    <md-sidenav #sidenav mode="side" class="app-sidenav">
+        Sidenav
+    </md-sidenav>
+
+    <md-toolbar color="primary">
+        <button class="app-icon-button" (click)="sidenav.toggle()">
+            <i class="material-icons app-toolbar-menu">menu</i>
+        </button>
+
+        Angular Material2 Example App
+
+        <span class="app-toolbar-filler"></span>
+        <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
+        <button md-button [routerLink]="['./tasks']">TODOS</button>
+    </md-toolbar>
+
+    <router-outlet></router-outlet>
+
+</md-sidenav-layout>
+
+<span class="app-action">
+  <button md-fab><md-icon>check circle</md-icon></button>
+</span>
