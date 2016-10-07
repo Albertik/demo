@@ -1,9 +1,3 @@
 {
-  "tasks": [
-    {
-      "completed": false,
-      "title": "fix styling for this component",
-      "id": "afb1ceb6-420f-4f77-8aa8-476098edbb8a"
-    }
-  ]
+  "tasks": []
 }
