@@ -1,7 +1,17 @@
 <md-sidenav-layout [class.m2app-dark]="isDarkTheme">
 
     <md-sidenav #sidenav mode="side" class="app-sidenav">
-        Sidenav
+        <h2>Left Sidenav.</h2>
+
+        <md-list>
+            <md-list-item>
+                <button md-raised-button class="md-raised md-primary" #mybutton (click)="sidenav.close()">Close</button>
+            </md-list-item>
+            <md-list-item>
+                <button md-raised-button class="md-raised md-default" [routerLink]="['./deals']">Deals</button>
+            </md-list-item>
+        </md-list>
+
     </md-sidenav>
 
     <md-toolbar color="primary">
@@ -21,5 +31,5 @@
 </md-sidenav-layout>
 
 <!--<span class="app-action">-->
-  <!--<button md-fab><md-icon>check circle</md-icon></button>-->
+<!--<button md-fab><md-icon>check circle</md-icon></button>-->
 <!--</span>-->
