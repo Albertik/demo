@@ -5,3 +5,34 @@
 .demo-full-width {
     width: 100%;
 }
+
+.demo-basic {
+    padding: 0;
+}
+.demo-basic md-card-content {
+    padding: 16px;
+}
+.demo-full-width {
+    width: 100%;
+}
+
+.demo-icons {
+    font-size: 100%;
+    height: inherit;
+    vertical-align: top;
+    width: inherit;
+}
+
+.demo-card {
+    margin: 16px;
+}
+
+.md-hint {
+    position: absolute;
+    font-size: 75%;
+    bottom: -0.5em;
+
+&.md-right {
+     right: 0;
+ }
+}
