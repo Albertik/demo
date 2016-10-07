@@ -17,6 +17,8 @@ const authCheck = jwt({
   audience: config.AUTH0_CLIENT_ID
 });
 
+app.use(require('./router'));
+
 app.get('/api/deals/public', (req, res)=>{
   let deals = [
   {
