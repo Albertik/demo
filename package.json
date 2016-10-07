@@ -41,6 +41,7 @@
     "@ngrx/core": "^1.2.0",
     "@ngrx/effects": "^2.0.0-beta.3",
     "@ngrx/store": "^2.2.1",
+    "angular2-jwt": "^0.1.23",
     "core-js": "^2.4.1",
     "minx": "r-park/minx.git",
     "rxjs": "5.0.0-beta.12",

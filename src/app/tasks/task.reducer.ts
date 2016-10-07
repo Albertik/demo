@@ -3,6 +3,7 @@ import { Task } from './task';
 import { TaskActions } from './task.actions';
 
 
+//noinspection TypeScriptValidateTypes
 export const taskReducer: ActionReducer<Task[]> = (state: Task[] = [], {payload, type}: Action) => {
   switch (type) {
     case TaskActions.CREATE_TASK_FULFILLED:

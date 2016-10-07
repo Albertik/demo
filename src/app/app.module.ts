@@ -30,14 +30,14 @@ import {OVERLAY_PROVIDERS} from '@angular2-material/core';
 import { MdUniqueSelectionDispatcher } from '@angular2-material/core';
 
 import {AppComponent} from './app.component';
-import {RouterModule} from "@angular/router";
-import {ROUTES} from "./app.routes";
+import {routing} from "./app.routes";
 import {Home} from "./home/home.component";
 import {StoreModule} from "@ngrx/store";
 import {counterReducer} from "./counter/counter.reducer";
 import {Counter} from "./counter/counter.component";
 import {taskReducer} from "./tasks/task.reducer";
 import {TasksModule} from "./tasks/index";
+import {Auth0Module} from "./auth0/auth0.module";
 
 @NgModule({
     declarations: [
@@ -49,6 +49,8 @@ import {TasksModule} from "./tasks/index";
         BrowserModule,
         FormsModule,
         HttpModule,
+
+        // angular material 2 modules
         MdButtonToggleModule,
         MdButtonModule,
         MdCardModule,
@@ -70,12 +72,19 @@ import {TasksModule} from "./tasks/index";
         PortalModule,
         MdRippleModule,
         RtlModule,
-        RouterModule.forRoot(ROUTES, {useHash: true}),
+
+        // routes
+        routing,
+
+        // rx/store
         StoreModule.provideStore({
             counter: counterReducer,
             tasks: taskReducer
         }, {counter: 0}),
-        TasksModule
+
+        // internal modules
+        TasksModule,
+        Auth0Module
     ],
     providers: [
         OVERLAY_PROVIDERS,

@@ -3,7 +3,7 @@ import 'rxjs/add/operator/map';
 import { Injectable } from '@angular/core';
 import { Headers, Http, Request, RequestMethod, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { Task } from '../../../components/tasks';
+import { Task } from '../../../tasks/task';
 import { API_TASKS_URL } from './constants';
 
 

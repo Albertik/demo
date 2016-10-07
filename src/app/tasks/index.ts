@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { EffectsModule } from '@ngrx/effects';
 
-import { SharedModule } from '../../shared';
+import { SharedModule } from '../shared';
 import { TaskFormComponent } from './components/task-form';
 import { TaskItemComponent } from './components/task-item';
 import { TaskListComponent } from './components/task-list';
